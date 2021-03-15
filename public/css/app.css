@@ -1,0 +1,121 @@
+@font-face {
+  font-family: mulish;
+  src: url(../fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+  font-family: mulish-medium;
+  src: url(../fonts/Mulish-Medium.ttf);
+}
+
+@font-face {
+  font-family: mulish-bold;
+  src: url(../fonts/Mulish-Bold.ttf);
+}
+
+body,
+div,
+span,
+p,
+a,
+button {
+  font-family: mulish;
+}
+
+a,
+button {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.text-primary {
+  color: #458FF6;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #233348;
+}
+
+.text-desc {
+  color: #7D7987;
+}
+
+.fam-regular {
+  font-family: mulish;
+}
+
+.fam-medium {
+  font-family: mulish-medium;
+}
+
+.fam-bold {
+  font-family: mulish-bold;
+}
+
+.vicare-btn {
+  padding: 16px 30px;
+  background-color: #458FF6;
+  color: #FFFFFF;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: .4s all;
+}
+
+.vicare-btn:hover {
+  background-color: #317de8;
+}
+
+.vicare-btn:active {
+  transform: scale(0.9);
+}
+
+.vicare-bg-primary {
+  background: #458FF6;
+}
+
+.vicare-bg-white {
+  background: #FFFFFF;
+}
+
+.vicare-bg-gradient-one {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+}
+
+.vicare-bg-gradient-two {
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.vicare-topnav ul li a[active="true"],
+.vicare-topnav ul li a:hover {
+  color: #233348;
+  font-weight: bold;
+}
+
+.vicare-header-illustration {
+  background-image: url(../img/header/illustration.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+}
+
+.vicare-section-header {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.vicare-section-header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: #233348;
+}
+/*# sourceMappingURL=app.css.map */

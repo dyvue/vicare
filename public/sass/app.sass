@@ -1,0 +1,107 @@
+$colorPrimary: #458FF6
+$colorPrimaryHover: #317de8
+$colorWhite: #FFFFFF
+$colorBlack: #233348
+$colorDesc: #7D7987
+
+@import "./fonts.sass"
+
+body,
+div,
+span,
+p,
+a,
+button
+  font-family: mulish
+
+a,
+button
+  text-decoration: none !important
+  outline: none !important
+
+// Text color
+.text
+  &-primary
+    color: $colorPrimary
+  &-white
+    color: $colorWhite
+  &-black
+    color: $colorBlack
+  &-desc
+    color: $colorDesc
+
+// Font family
+.fam
+  &-regular
+    font-family: mulish
+  &-medium
+    font-family: mulish-medium
+  &-bold
+    font-family: mulish-bold
+
+
+
+
+// Customize
+
+.vicare
+
+  // Button
+  &-btn
+    padding: 16px 30px
+    background-color: $colorPrimary
+    color: $colorWhite
+    border-radius: 30px
+    font-weight: bold
+    transition: .4s all
+    &:hover
+      background-color: $colorPrimaryHover
+    &:active
+      transform: scale(.9)
+
+  // Background color
+  &-bg
+    &-primary
+      background: $colorPrimary
+    &-white
+      background: $colorWhite
+    &-gradient
+      &-one
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%)
+      &-two
+        background: linear-gradient(183.41deg, #67C3F3 -8.57%,#5A98F2 82.96%)
+
+  
+  // Top navigation
+  &-topnav
+    ul li
+      a[active="true"],
+      a:hover
+        color: $colorBlack
+        font-weight: bold
+  
+
+  // header
+  &-header
+    &-text
+    &-illustration
+      background-image: url(../img/header/illustration.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      width: 500px
+      height: 500px
+
+  // section
+  &-section
+    &-header
+      position: relative
+      padding-bottom: 20px
+    &-header::before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: calc(50% - 30px)
+      width: 60px
+      height: 3px
+      border-radius: 30px
+      background-color: $colorBlack
