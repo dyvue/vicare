@@ -1,0 +1,31 @@
+.vicare-icon {
+  background-position: center center;
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.vicare-icon-search-doctor {
+  background-image: url(../img/icons/search-doctor.svg);
+}
+
+.vicare-icon-online-pharmacy {
+  background-image: url(../img/icons/online-pharmacy.svg);
+}
+
+.vicare-icon-consultation {
+  background-image: url(../img/icons/consultation.svg);
+}
+
+.vicare-icon-details-info {
+  background-image: url(../img/icons/details-info.svg);
+}
+
+.vicare-icon-emergency-care {
+  background-image: url(../img/icons/emergency-care.svg);
+}
+
+.vicare-icon-tracking {
+  background-image: url(../img/icons/tracking.svg);
+}
+/*# sourceMappingURL=icons.css.map */

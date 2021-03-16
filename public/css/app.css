@@ -13,6 +13,37 @@
   src: url(../fonts/Mulish-Bold.ttf);
 }
 
+.vicare-icon {
+  background-position: center center;
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.vicare-icon-search-doctor {
+  background-image: url(../img/icons/search-doctor.svg);
+}
+
+.vicare-icon-online-pharmacy {
+  background-image: url(../img/icons/online-pharmacy.svg);
+}
+
+.vicare-icon-consultation {
+  background-image: url(../img/icons/consultation.svg);
+}
+
+.vicare-icon-details-info {
+  background-image: url(../img/icons/details-info.svg);
+}
+
+.vicare-icon-emergency-care {
+  background-image: url(../img/icons/emergency-care.svg);
+}
+
+.vicare-icon-tracking {
+  background-image: url(../img/icons/tracking.svg);
+}
+
 body,
 div,
 span,
@@ -57,7 +88,8 @@ button {
 }
 
 .vicare-btn {
-  padding: 16px 30px;
+  padding: 16px 45px;
+  border: 1px solid #458FF6;
   background-color: #458FF6;
   color: #FFFFFF;
   border-radius: 30px;
@@ -70,6 +102,25 @@ button {
 }
 
 .vicare-btn:active {
+  transform: scale(0.9);
+}
+
+.vicare-btn-outline {
+  padding: 16px 45px;
+  border: 1px solid #458FF6;
+  background-color: #FFFFFF;
+  color: #458FF6;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: .4s all;
+}
+
+.vicare-btn-outline:hover {
+  color: #FFFFFF;
+  background-color: #317de8;
+}
+
+.vicare-btn-outline:active {
   transform: scale(0.9);
 }
 
@@ -87,6 +138,11 @@ button {
 
 .vicare-bg-gradient-two {
   background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.vicare-box {
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  height: 350px;
 }
 
 .vicare-topnav ul li a[active="true"],
@@ -117,5 +173,9 @@ button {
   height: 3px;
   border-radius: 30px;
   background-color: #233348;
+}
+
+.vicare-section-action {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=app.css.map */
