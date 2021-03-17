@@ -44,6 +44,10 @@
   background-image: url(../img/icons/tracking.svg);
 }
 
+.vicare-icon-download {
+  background-image: url(../img/icons/download.svg);
+}
+
 body,
 div,
 span,
@@ -124,6 +128,11 @@ button {
   transform: scale(0.9);
 }
 
+.vicare-btn-outline:hover i {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
 .vicare-bg-primary {
   background: #458FF6;
 }
@@ -175,8 +184,40 @@ button {
   background-color: #233348;
 }
 
+.vicare-section-header-col {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.vicare-section-header-col::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: #233348;
+}
+
 .vicare-section-action {
   margin-top: 50px;
+}
+
+.vicare-leadinghealthcare-illustration {
+  background-image: url(../img/illustrations/leading-healthcare.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+}
+
+.vicare-downloadmobileapps-illustration {
+  background-image: url(../img/illustrations/download-mobile-apps.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -184,6 +225,10 @@ button {
     display: none;
   }
   .vicare-header-illustration {
+    width: 300px;
+    height: 300px;
+  }
+  .vicare-leadinghealthcare-illustration {
     width: 300px;
     height: 300px;
   }
