@@ -5,7 +5,7 @@
 
 ## Screenshot
 
-<img src="design-layout.png">
+<img src="design.png">
 
 ## Contributing
 
