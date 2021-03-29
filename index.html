@@ -27,21 +27,28 @@
               </h1>
             </a>
           </div>
-          <div class="vicare-topnav">
-            <ul class="flex items-center">
-              <li class="px-6">
+          <div class="block lg:hidden">
+            <button onclick="vicareHamburgerBtn()">
+              <div class="menu-icon"></div>
+              <div class="menu-icon"></div>
+              <div class="menu-icon"></div>
+            </button>
+          </div>
+          <div id="vicareHeaderNavigation" class="vicare-topnav">
+            <ul class="flex flex-col lg:flex-row items-center">
+              <li class="py-2 lg:py-0 px-0 lg:px-6">
                 <a href="" class="fam-medium text-base text-desc" active="true">Home</a>
               </li>
-              <li class="px-6">
+              <li class="py-2 lg:py-0 px-0 lg:px-6">
                 <a href="" class="fam-medium text-base text-desc">Find a doctor</a>
               </li>
-              <li class="px-6">
+              <li class="py-2 lg:py-0 px-0 lg:px-6">
                 <a href="" class="fam-medium text-base text-desc">Apps</a>
               </li>
-              <li class="px-6">
+              <li class="py-2 lg:py-0 px-0 lg:px-6">
                 <a href="" class="fam-medium text-base text-desc">Testimonials</a>
               </li>
-              <li class="px-6">
+              <li class="py-2 lg:py-0 px-0 lg:px-6">
                 <a href="" class="fam-medium text-base text-desc">About Us</a>
               </li>
             </ul>
@@ -138,7 +145,6 @@
             <p class="text-base text-desc mt-8">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
             <button class="vicare-btn-outline mt-8">
               Download
-              <!-- <i class="vicare-icon vicare-icon-download w-4 h-4 align-middle ml-2"></i> -->
             </button>
           </div>
         </div>
@@ -148,15 +154,107 @@
     <section id="VicareTestimonials">
       <div class="pb-16">
         <div class="container mx-auto px-8 lg:px-32">
-          <div class="flex flex-col justify-center items-center py-12 vicare-bg-gradient-one text-white rounded-2xl">
-            <div class="vicare-service-text text-center lg:px-64">
-              <h3 class="vicare-section-header-white text-4xl fam-bold">What our customer are saying</h3>
+          <div class="flex flex-col justify-center items-center py-16 vicare-bg-gradient-one text-white rounded-2xl px-8">
+            <div class="text-center lg:px-64">
+              <h3 class="vicare-section-header-white text-3xl md:text-4xl fam-bold">What our customer are saying</h3>
+            </div>
+            <div class="w-full flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-8 md:px-16 lg:px-0">
+              <div class="w-full lg:w-6/12 mt-8 flex flex-col lg:flex-row items-center justify-center gap-4">
+                <img src="public/img/customers/1.jpeg" alt="Romadhan" class="w-36 h-36 rounded-full border-2 border-white">
+                <div class="text-center lg:text-left">
+                  <h4 class="text-2xl fam-bold">Romadhan Edy Prasetyo</h4>
+                  <p class="mt-1 text-base text-white">Founder of Uang Kerja</p>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 mt-8 flex items-center justify-center gap-4">
+                  <p class="mt-1 text-base text-white lg:pr-16 text-center lg:text-left">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="VicareArticles">
+      <div class="container mx-auto px-8">
+        <div class="flex flex-col justify-center items-center py-12">
+          <div class="vicare-service-text text-center lg:px-64">
+            <h3 class="vicare-section-header text-4xl fam-bold">Check out our latest article</h3>
+          </div>
+          <div class="vicare-service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 lg:px-32">
+            <a href="javascript:void(0)">
+              <div class="vicare-box article rounded-2xl">
+                <img src="public/img/articles/1.png" alt="1" class="w-full">
+                <div class="p-8">
+                  <h4 class="text-2xl fam-bold">Disease detection, check 
+                    up in the laboratory</h4>
+                  <p class="text-base text-desc mt-6 pr-12">In this case, the role of the health laboratory is very important to do a disease detection...</p>
+                  <p class="font-semibold text-base text-primary mt-6 pr-12">Read More <i class="ml-2 w-4 h-4 align-middle vicare-icon vicare-icon-more"></i></p>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="vicare-box article rounded-2xl">
+                <img src="public/img/articles/2.png" alt="1" class="w-full">
+                <div class="p-8">
+                  <h4 class="text-2xl fam-bold">Herbal medicines that are 
+                    safe for consumption</h4>
+                  <p class="text-base text-desc mt-6 pr-12">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                  <p class="font-semibold text-base text-primary mt-6 pr-12">Read More <i class="ml-2 w-4 h-4 align-middle vicare-icon vicare-icon-more"></i></p>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="vicare-box article rounded-2xl">
+                <img src="public/img/articles/3.png" alt="1" class="w-full">
+                <div class="p-8">
+                  <h4 class="text-2xl fam-bold">Natural care for healthy 
+                    facial skin</h4>
+                  <p class="text-base text-desc mt-6 pr-12">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
+                  <p class="font-semibold text-base text-primary mt-6 pr-12">Read More <i class="ml-2 w-4 h-4 align-middle vicare-icon vicare-icon-more"></i></p>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="vicare-box article rounded-2xl">
+                <img src="public/img/articles/1.png" alt="1" class="w-full">
+                <div class="p-8">
+                  <h4 class="text-2xl fam-bold">Disease detection, check 
+                    up in the laboratory</h4>
+                  <p class="text-base text-desc mt-6 pr-12">In this case, the role of the health laboratory is very important to do a disease detection...</p>
+                  <p class="font-semibold text-base text-primary mt-6 pr-12">Read More <i class="ml-2 w-4 h-4 align-middle vicare-icon vicare-icon-more"></i></p>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="vicare-box article rounded-2xl">
+                <img src="public/img/articles/2.png" alt="1" class="w-full">
+                <div class="p-8">
+                  <h4 class="text-2xl fam-bold">Herbal medicines that are 
+                    safe for consumption</h4>
+                  <p class="text-base text-desc mt-6 pr-12">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                  <p class="font-semibold text-base text-primary mt-6 pr-12">Read More <i class="ml-2 w-4 h-4 align-middle vicare-icon vicare-icon-more"></i></p>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="vicare-box article rounded-2xl">
+                <img src="public/img/articles/3.png" alt="1" class="w-full">
+                <div class="p-8">
+                  <h4 class="text-2xl fam-bold">Natural care for healthy 
+                    facial skin</h4>
+                  <p class="text-base text-desc mt-6 pr-12">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
+                  <p class="font-semibold text-base text-primary mt-6 pr-12">Read More <i class="ml-2 w-4 h-4 align-middle vicare-icon vicare-icon-more"></i></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="vicare-section-action">
+            <button class="vicare-btn-outline">View All</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="VicareFooter" class="vicare-bg-gradient-one text-white">
       <div class="container mx-auto px-8">
@@ -207,5 +305,16 @@
     </footer>
 
   </div>
+
+  <script>
+    function vicareHamburgerBtn() {
+      var x = document.getElementById("vicareHeaderNavigation");
+      if (x.classList.contains("active")) {
+        x.classList.remove("active")
+      } else {
+        x.classList.add("active")
+      }
+    }
+  </script>
 </body>
 </html>
